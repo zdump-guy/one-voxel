@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Projects - One Voxel</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="flex bg-charcoal-deep">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-obsidian p-lg flex flex-col gap-2xl">
+        <h1 class="text-2xl font-bold text-primary">One Voxel</h1>
+        <nav class="flex flex-col gap-lg">
+            <a href="index.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-house"></i> Home</a>
+            <a href="projects.html" class="flex items-center gap-md text-lg text-primary"><i class="ph ph-kanban"></i> Projects</a>
+            <a href="financials.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-chart-line"></i> Financials</a>
+            <a href="../manager/team.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-users"></i> Team</a>
+            <a href="../profile.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-user"></i> Profile</a>
+        </nav>
+        <div class="mt-auto">
+            <a href="../login.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-sign-out"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-xl">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-primary mb-xl">Project Oversight</h1>
+
+            <div class="card">
+                <div class="card-content">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="border-b border-border-primary">
+                                <th class="py-md text-primary">Project</th>
+                                <th class="py-md text-primary">Manager</th>
+                                <th class="py-md text-primary">Status</th>
+                                <th class="py-md text-primary">Budget</th>
+                                <th class="py-md text-primary">Profitability</th>
+                                <th class="py-md text-primary">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-md text-secondary">Project Alpha</td>
+                                <td class="py-md text-secondary">Maria Garcia</td>
+                                <td class="py-md text-green-400">On Track</td>
+                                <td class="py-md text-secondary">$50,000</td>
+                                <td class="py-md text-green-400">+20%</td>
+                                <td class="py-md"><a href="#" class="text-accent hover:text-primary">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td class="py-md text-secondary">Project Beta</td>
+                                <td class="py-md text-secondary">David Chen</td>
+                                <td class="py-md text-yellow-400">Delayed</td>
+                                <td class="py-md text-secondary">$80,000</td>
+                                <td class="py-md text-yellow-400">+5%</td>
+                                <td class="py-md"><a href="#" class="text-accent hover:text-primary">Details</a></td>
+                            </tr>
+                             <tr>
+                                <td class="py-md text-secondary">Project Gamma</td>
+                                <td class="py-md text-secondary">Maria Garcia</td>
+                                <td class="py-md text-red-400">At Risk</td>
+                                <td class="py-md text-secondary">$30,000</td>
+                                <td class="py-md text-red-400">-10%</td>
+                                <td class="py-md"><a href="#" class="text-accent hover:text-primary">Details</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
