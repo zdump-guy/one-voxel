@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay - One Voxel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="flex bg-charcoal-deep">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-obsidian p-lg flex flex-col gap-2xl">
+        <h1 class="text-2xl font-bold text-primary">One Voxel</h1>
+        <nav class="flex flex-col gap-lg">
+            <a href="index.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-house"></i> Home</a>
+            <a href="tasks.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-check-square"></i> Tasks</a>
+            <a href="pay.html" class="flex items-center gap-md text-lg text-primary"><i class="ph ph-credit-card"></i> Pay</a>
+            <a href="chat.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-chat-dots"></i> Chat</a>
+            <a href="profile.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-user"></i> Profile</a>
+        </nav>
+        <div class="mt-auto">
+            <a href="login.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-sign-out"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-xl">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-primary mb-xl">My Pay</h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-xl">
+                <div class="lg:col-span-2">
+                    <!-- Current Pay Period -->
+                    <div class="card mb-xl">
+                        <div class="card-content">
+                            <h2 class="card-title">Current Pay Period (2025-09-01 to 2025-09-30)</h2>
+                            <div class="grid grid-cols-2 gap-lg">
+                                <div>
+                                    <p class="text-secondary">Gross Salary</p>
+                                    <p class="text-2xl font-bold text-primary">$5,000.00</p>
+                                </div>
+                                <div>
+                                    <p class="text-secondary">Deductions</p>
+                                    <p class="text-2xl font-bold text-primary">$500.00</p>
+                                </div>
+                                <div>
+                                    <p class="text-secondary">Net Pay</p>
+                                    <p class="text-2xl font-bold text-primary">$4,500.00</p>
+                                </div>
+                                <div>
+                                    <p class="text-secondary">Hours Worked</p>
+                                    <p class="text-2xl font-bold text-primary">160</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pay History -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title">Pay History</h2>
+                            <table class="w-full text-left">
+                                <thead>
+                                    <tr>
+                                        <th class="py-md text-primary">Pay Period</th>
+                                        <th class="py-md text-primary">Net Pay</th>
+                                        <th class="py-md text-primary">Statement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-border-primary">
+                                        <td class="py-md text-secondary">2025-08-01 to 2025-08-31</td>
+                                        <td class="py-md text-secondary">$4,500.00</td>
+                                        <td class="py-md"><a href="#" class="text-accent hover:text-primary">View</a></td>
+                                    </tr>
+                                    <tr class="border-b border-border-primary">
+                                        <td class="py-md text-secondary">2025-07-01 to 2025-07-31</td>
+                                        <td class="py-md text-secondary">$4,500.00</td>
+                                        <td class="py-md"><a href="#" class="text-accent hover:text-primary">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefits Information -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Benefits</h2>
+                        <div class="flex flex-col gap-lg">
+                            <div>
+                                <h3 class="text-lg font-semibold text-primary">Health Insurance</h3>
+                                <p class="text-secondary">Premium Plan - PPO</p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-primary">Retirement Plan</h3>
+                                <p class="text-secondary">401(k) - 5% Match</p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-primary">Vacation Accrual</h3>
+                                <p class="text-secondary">120 Hours Remaining</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
