@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Voxel - Web Development Specialists</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header class="glass fixed top-0 left-0 right-0 z-50">
+        <div class="container flex items-center justify-between py-md">
+            <a href="/" class="text-2xl font-bold text-primary">One Voxel</a>
+            <nav class="hidden md:flex items-center gap-lg">
+                <a href="#home" class="text-accent hover:text-primary transition-all">Home</a>
+                <a href="#services" class="text-accent hover:text-primary transition-all">Services</a>
+                <a href="#projects" class="text-accent hover:text-primary transition-all">Productions</a>
+                <a href="#about" class="text-accent hover:text-primary transition-all">About</a>
+                <a href="#contact" class="text-accent hover:text-primary transition-all">Contact</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary hidden md:block">Contact Us</a>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-primary"><i class="ph ph-list"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section min-h-screen flex items-center justify-center text-center" style="background-image: url('https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <div class="absolute top-0 left-0 right-0 bottom-0 bg-carbon-black opacity-70"></div>
+            <div class="container relative z-10">
+                <h1 class="text-6xl font-black text-primary mb-md leading-tight">Crafting the Future of Web, One Voxel at a Time.</h1>
+                <p class="text-xl text-secondary mb-lg">We specialize in building high-performance, scalable, and beautiful web applications.</p>
+                <a href="#contact" class="btn btn-primary text-lg py-lg px-2xl">Get a Free Consultation</a>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-header">Our Core Services</h2>
+                <div class="grid grid-cols-auto gap-lg">
+                    <div class="card">
+                        <div class="card-content text-center">
+                            <i class="ph-code text-5xl text-accent mb-md"></i>
+                            <h3 class="card-title">Web Development</h3>
+                            <p class="card-description">Full-stack solutions, from sleek front-ends to robust back-ends. We build for performance and scale.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content text-center">
+                            <i class="ph-paint-brush text-5xl text-accent mb-md"></i>
+                            <h3 class="card-title">UI/UX Design</h3>
+                            <p class="card-description">Intuitive and beautiful user interfaces that provide a seamless user experience across all devices.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content text-center">
+                            <i class="ph-storefront text-5xl text-accent mb-md"></i>
+                            <h3 class="card-title">E-commerce Solutions</h3>
+                            <p class="card-description">Custom e-commerce platforms designed to maximize conversions and provide a smooth shopping experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-header">Featured Productions</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                    <div class="card col-span-1">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0abfe3d?q=80&w=2070&auto=format&fit=crop" alt="Project 1" class="w-full h-64 object-cover">
+                        <div class="card-content">
+                            <h3 class="card-title">Project Alpha</h3>
+                            <p class="card-description">A corporate website for a leading tech company.</p>
+                            <div class="card-footer">
+                                <a href="#" class="text-accent hover:text-primary">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-span-1 md:col-span-2">
+                         <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1931&auto=format&fit=crop" alt="Project 2" class="w-full h-64 object-cover">
+                        <div class="card-content">
+                            <h3 class="card-title">Project Beta</h3>
+                            <p class="card-description">An e-commerce platform with a custom CMS.</p>
+                             <div class="card-footer">
+                                <a href="#" class="text-accent hover:text-primary">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Statistics -->
+        <section id="stats" class="section surface-secondary">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-lg text-center">
+                    <div class="p-lg">
+                        <h3 class="text-5xl font-bold text-primary" data-counter="150">0</h3>
+                        <p class="text-lg text-secondary mt-sm">Projects Completed</p>
+                    </div>
+                    <div class="p-lg">
+                        <h3 class="text-5xl font-bold text-primary" data-counter="99">0</h3>
+                        <p class="text-lg text-secondary mt-sm">Clients Served</p>
+                    </div>
+                    <div class="p-lg">
+                        <h3 class="text-5xl font-bold text-primary" data-counter="8">0</h3>
+                        <p class="text-lg text-secondary mt-sm">Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Testimonials -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="section-header">What Our Clients Say</h2>
+                <div class="relative">
+                    <div class="testimonial-slider">
+                        <div class="card testimonial-card">
+                            <div class="card-content text-center">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client 1" class="w-24 h-24 rounded-full mx-auto mb-md border-2 border-accent">
+                                <p class="text-lg text-primary mb-md">"One Voxel delivered a product that exceeded our expectations. Their attention to detail is unmatched."</p>
+                                <h4 class="font-semibold text-accent">John Doe</h4>
+                                <p class="text-sm text-muted">CEO, TechCorp</p>
+                            </div>
+                        </div>
+                        <div class="card testimonial-card hidden">
+                            <div class="card-content text-center">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client 2" class="w-24 h-24 rounded-full mx-auto mb-md border-2 border-accent">
+                                <p class="text-lg text-primary mb-md">"The best development team I've ever worked with. Highly recommended."</p>
+                                <h4 class="font-semibold text-accent">Jane Smith</h4>
+                                <p class="text-sm text-muted">Founder, Innovate LLC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Preview -->
+        <section id="contact" class="section surface-secondary">
+            <div class="container">
+                <h2 class="section-header">Let's Build Something Amazing</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+                    <div>
+                        <form class="flex flex-col gap-md">
+                            <input type="text" placeholder="Your Name" class="input">
+                            <input type="email" placeholder="Your Email" class="input">
+                            <textarea placeholder="Your Message" rows="5" class="input"></textarea>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-bold text-primary mb-md">Contact Information</h3>
+                        <p class="text-lg text-secondary mb-sm"><i class="ph ph-map-pin-line mr-sm"></i> 123 Voxel Street, Web City, 10101</p>
+                        <p class="text-lg text-secondary mb-sm"><i class="ph ph-phone-call mr-sm"></i> (123) 456-7890</p>
+                        <p class="text-lg text-secondary"><i class="ph ph-envelope-simple mr-sm"></i> contact@onevoxel.dev</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-xl surface-primary">
+        <div class="container text-center text-muted">
+            <p>&copy; 2025 One Voxel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
