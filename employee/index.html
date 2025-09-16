@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - One Voxel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="flex bg-charcoal-deep">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-obsidian p-lg flex flex-col gap-2xl">
+        <h1 class="text-2xl font-bold text-primary">One Voxel</h1>
+        <nav class="flex flex-col gap-lg">
+            <a href="index.html" class="flex items-center gap-md text-lg text-primary"><i class="ph ph-house"></i> Home</a>
+            <a href="tasks.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-check-square"></i> Tasks</a>
+            <a href="pay.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-credit-card"></i> Pay</a>
+            <a href="chat.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-chat-dots"></i> Chat</a>
+            <a href="profile.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-user"></i> Profile</a>
+        </nav>
+        <div class="mt-auto">
+            <a href="login.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-sign-out"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-xl">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-primary mb-xl">Dashboard</h1>
+            
+            <!-- Quick Actions -->
+            <div class="grid grid-cols-4 gap-lg mb-xl">
+                <button class="btn btn-primary">Clock In/Out</button>
+                <button class="btn btn-secondary">Submit Timesheet</button>
+                <button class="btn btn-secondary">Request Time Off</button>
+                <button class="btn btn-secondary">Report Issue</button>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl">
+                <!-- Task Summary -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Task Summary</h2>
+                        <div class="flex justify-between items-center mb-md">
+                            <p class="text-secondary">Active Tasks</p>
+                            <p class="text-2xl font-bold text-primary">5</p>
+                        </div>
+                        <div class="flex justify-between items-center mb-md">
+                            <p class="text-secondary">Upcoming Deadlines (7 days)</p>
+                            <p class="text-2xl font-bold text-primary">2</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-secondary">Completion Rate (monthly)</p>
+                            <p class="text-2xl font-bold text-primary">95%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earnings Summary -->
+                <div class="card">
+                    <div class="card-content">
+                        <h2 class="card-title">Earnings Summary</h2>
+                        <div class="flex justify-between items-center mb-md">
+                            <p class="text-secondary">Current Month Earnings</p>
+                            <p class="text-2xl font-bold text-primary">$4,500</p>
+                        </div>
+                        <div class="flex justify-between items-center mb-md">
+                            <p class="text-secondary">Year-to-Date</p>
+                            <p class="text-2xl font-bold text-primary">$40,500</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p class="text-secondary">Next Payday</p>
+                            <p class="text-2xl font-bold text-primary">2025-09-30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages Center -->
+                <div class="card lg:col-span-2">
+                    <div class="card-content">
+                        <h2 class="card-title">Messages</h2>
+                        <div class="flex flex-col gap-md">
+                            <div class="flex items-center gap-md p-md rounded-lg bg-surface-tertiary">
+                                <img src="https://randomuser.me/api/portraits/women/42.jpg" class="w-12 h-12 rounded-full" alt="Maria Garcia">
+                                <div>
+                                    <p class="font-semibold text-primary">Maria Garcia</p>
+                                    <p class="text-secondary">Please review the latest commit for Project Beta.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-md p-md rounded-lg bg-surface-tertiary">
+                                <img src="https://randomuser.me/api/portraits/men/41.jpg" class="w-12 h-12 rounded-full" alt="Alex Johnson">
+                                <div>
+                                    <p class="font-semibold text-primary">Alex Johnson</p>
+                                    <p class="text-secondary">Team meeting at 3 PM today.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
