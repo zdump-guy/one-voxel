@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - One Voxel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header class="glass fixed top-0 left-0 right-0 z-50">
+        <div class="container flex items-center justify-between py-md">
+            <a href="/" class="text-2xl font-bold text-primary">One Voxel</a>
+            <nav class="hidden md:flex items-center gap-lg">
+                <a href="index.html#home" class="text-accent hover:text-primary transition-all">Home</a>
+                <a href="index.html#services" class="text-accent hover:text-primary transition-all">Services</a>
+                <a href="productions.html" class="text-accent hover:text-primary transition-all">Productions</a>
+                <a href="about.html" class="text-accent hover:text-primary transition-all">About</a>
+                <a href="contact.html" class="text-accent hover:text-primary transition-all">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary hidden md:block">Contact Us</a>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-primary"><i class="ph ph-list"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Company Story Section -->
+        <section id="story" class="section pt-4xl">
+            <div class="container text-center">
+                <h1 class="text-5xl font-bold text-primary mb-md">Our Journey</h1>
+                <p class="text-lg text-secondary max-w-3xl mx-auto">Founded in 2017, One Voxel was born from a passion for building exceptional web experiences. We believe in the power of technology to solve problems, connect people, and grow businesses. Our mission is to craft beautiful, functional, and high-performing websites and applications that make a real impact.</p>
+            </div>
+        </section>
+
+        <!-- Team Showcase Section -->
+        <section id="team" class="section">
+            <div class="container">
+                <h2 class="section-header">Meet Our Experts</h2>
+                <div class="grid grid-cols-auto gap-lg">
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-md border-2 border-accent">
+                            <h3 class="card-title">Alex Johnson</h3>
+                            <p class="text-accent font-semibold mb-sm">Founder & CEO</p>
+                            <p class="card-description">A visionary leader with a passion for innovation and over 15 years of experience in the tech industry.</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-md border-2 border-accent">
+                            <h3 class="card-title">Maria Garcia</h3>
+                            <p class="text-accent font-semibold mb-sm">Lead Developer</p>
+                            <p class="card-description">A full-stack guru who can turn any complex problem into an elegant and efficient solution.</p>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-content">
+                            <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-md border-2 border-accent">
+                            <h3 class="card-title">David Chen</h3>
+                            <p class="text-accent font-semibold mb-sm">UI/UX Design Lead</p>
+                            <p class="card-description">A creative mind with an eye for detail, dedicated to crafting intuitive and engaging user experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Culture Section -->
+        <section id="culture" class="section surface-secondary">
+            <div class="container">
+                <h2 class="section-header">Our Culture</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-primary mb-md">Collaboration, Innovation, Excellence</h3>
+                        <p class="text-lg text-secondary mb-md">We foster a collaborative environment where creativity and innovation thrive. Our team is our greatest asset, and we invest in their growth and well-being. We believe in continuous learning, pushing boundaries, and celebrating our successes together.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-md">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" class="rounded-xl shadow-lg" alt="Team working">
+                        <img src="https://images.unsplash.com/photo-1573496774439-fe3923b03679?q=80&w=2070&auto=format&fit=crop" class="rounded-xl shadow-lg" alt="Team meeting">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology" class="section">
+            <div class="container">
+                <h2 class="section-header">Our Process</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-lg text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full glass flex items-center justify-center text-4xl text-accent mb-md">1</div>
+                        <h3 class="text-xl font-semibold text-primary mb-sm">Discover</h3>
+                        <p class="text-secondary">We start by understanding your goals, audience, and challenges.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full glass flex items-center justify-center text-4xl text-accent mb-md">2</div>
+                        <h3 class="text-xl font-semibold text-primary mb-sm">Design</h3>
+                        <p class="text-secondary">We create wireframes, mockups, and prototypes for a seamless user experience.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full glass flex items-center justify-center text-4xl text-accent mb-md">3</div>
+                        <h3 class="text-xl font-semibold text-primary mb-sm">Develop</h3>
+                        <p class="text-secondary">Our team brings the design to life with clean, efficient code.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full glass flex items-center justify-center text-4xl text-accent mb-md">4</div>
+                        <h3 class="text-xl font-semibold text-primary mb-sm">Deploy</h3>
+                        <p class="text-secondary">We launch your project and provide ongoing support for success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-xl surface-primary">
+        <div class="container text-center text-muted">
+            <p>&copy; 2025 One Voxel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
