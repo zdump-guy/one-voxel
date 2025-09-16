@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - One Voxel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="flex bg-charcoal-deep">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-obsidian p-lg flex flex-col gap-2xl">
+        <h1 class="text-2xl font-bold text-primary">One Voxel</h1>
+        <nav class="flex flex-col gap-lg">
+            <a href="index.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-house"></i> Home</a>
+            <a href="tasks.html" class="flex items-center gap-md text-lg text-primary"><i class="ph ph-check-square"></i> Tasks</a>
+            <a href="pay.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-credit-card"></i> Pay</a>
+            <a href="chat.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-chat-dots"></i> Chat</a>
+            <a href="profile.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-user"></i> Profile</a>
+        </nav>
+        <div class="mt-auto">
+            <a href="login.html" class="flex items-center gap-md text-lg text-accent hover:text-primary"><i class="ph ph-sign-out"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-xl">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-primary mb-xl">My Tasks</h1>
+
+            <!-- Task Filters -->
+            <div class="flex justify-between items-center mb-xl">
+                <div class="flex gap-md">
+                    <button class="btn btn-secondary">All</button>
+                    <button class="btn btn-secondary">In Progress</button>
+                    <button class="btn btn-secondary">In Review</button>
+                    <button class="btn btn-secondary">Completed</button>
+                </div>
+                <input type="text" placeholder="Search tasks..." class="input w-64">
+            </div>
+
+            <!-- Current Tasks -->
+            <h2 class="text-2xl font-bold text-primary mb-md">Current Tasks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="flex justify-between items-start mb-md">
+                            <h3 class="card-title">Implement Hero Section</h3>
+                            <span class="text-sm font-semibold text-red-400">High Priority</span>
+                        </div>
+                        <p class="card-description mb-md">Implement the hero section for the new client website, including the background image and CTA button.</p>
+                        <div class="w-full bg-graphite rounded-full h-2.5 mb-md">
+                            <div class="bg-green-500 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm text-muted">
+                            <span>Progress: 75%</span>
+                            <span>Deadline: 2025-09-20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="flex justify-between items-start mb-md">
+                            <h3 class="card-title">Fix Login Bug</h3>
+                            <span class="text-sm font-semibold text-yellow-400">Medium Priority</span>
+                        </div>
+                        <p class="card-description mb-md">The login form is not validating passwords correctly. Investigate and resolve the issue.</p>
+                        <div class="w-full bg-graphite rounded-full h-2.5 mb-md">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 40%"></div>
+                        </div>
+                        <div class="flex justify-between text-sm text-muted">
+                            <span>Progress: 40%</span>
+                            <span>Deadline: 2025-09-22</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Previous Tasks -->
+            <h2 class="text-2xl font-bold text-primary mt-2xl mb-md">Previous Tasks</h2>
+            <div class="card">
+                <div class="card-content">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-lg font-semibold text-primary">Design the new logo</h3>
+                            <p class="text-sm text-muted">Completed on 2025-09-15</p>
+                        </div>
+                        <div class="text-green-400 font-semibold">Completed</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
